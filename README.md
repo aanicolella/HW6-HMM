@@ -1,8 +1,21 @@
 ![BuildStatus](https://github.com/aanicolella/HW6-HMM/actions/workflows/tests.yml/badge.svg?event=push) 
 # HW6-HMM
+## Methods Description
 
-In this assignment, you'll implement the Forward and Viterbi Algorithms (dynamic programming). 
-
+In this assignment, I implemented the Forward and Viterbi Algorithms (dynamic programming). The HiddenMarkovModel class constructs an object containing the components needed to run the forward and/or viterbi algorithms. The class also contains two functions, described below: 
+* forward()
+  Description: This function runs the forward algorithm on an input sequence of observation states
+  args:
+  * input_observation_states (np.ndarray): observation sequence to run forward algorithm on 
+  returns:
+  * forward_probability (float): forward probability (likelihood) for the input observed sequence 
+  
+* viterbi()--
+  Description: This function runs the viterbi algorithm on an input sequence of observation states
+  args:
+  * decode_observation_states (np.ndarray): observation state sequence to decode 
+  returns: 
+  * best_hidden_state_sequence(list): most likely list of hidden states that generated the sequence observed states
 
 # Assignment
 
@@ -50,17 +63,17 @@ Finally, please update your README with a brief description of your methods.
 ## Task List
 
 [TODO] Complete the HiddenMarkovModel Class methods  <br>
-  [ ] complete the `forward` function in the HiddenMarkovModelClass <br>
-  [ ] complete the `viterbi` function in the HiddenMarkovModelClass <br>
+  [x] complete the `forward` function in the HiddenMarkovModelClass <br>
+  [x] complete the `viterbi` function in the HiddenMarkovModelClass <br>
 
 [TODO] Unit Testing  <br>
-  [ ] Ensure functionality on mini and full weather dataset <br>
-  [ ] Account for edge cases 
+  [x] Ensure functionality on mini and full weather dataset <br>
+  [x] Account for edge cases 
 
 [TODO] Packaging <br>
-  [ ] Update README with description of your methods <br>
-  [ ] pip installable module (optional)<br>
-  [ ] github actions (install + pytest) (optional)
+  [x] Update README with description of your methods <br>
+  [x] pip installable module (optional)<br>
+  [x] github actions (install + pytest) (optional)
 
 
 ## Completing the Assignment 
